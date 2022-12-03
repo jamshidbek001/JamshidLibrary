@@ -4,6 +4,7 @@
 // -------------------------------------------------------------
 
 using FluentAssertions;
+using Force.DeepCloner;
 using JamshidLibrary.App.Brokers.Storages;
 using JamshidLibrary.App.Models.Books;
 using JamshidLibrary.App.Services.Foundations.Books;
@@ -32,7 +33,7 @@ namespace JamshidLibrary.App.Tests.Unit.Services.Foundations.Books
             var randomBook = new Book();
             Book inputBook = randomBook;
             Book storageBook = inputBook;
-            Book expectedBook = storageBook;
+            Book expectedBook = storageBook.DeepClone();
 
             this.storageBrokerMock.Setup(broker =>
                 broker.InsertBook(inputBook))
