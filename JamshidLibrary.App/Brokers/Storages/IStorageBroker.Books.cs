@@ -13,6 +13,6 @@ namespace JamshidLibrary.App.Brokers.Storages
         List<Book> SelectAllBooks();
         Book SelectBookById(Guid bookId);
         Book UpdateBook(Book book);
-        Book DeleteBook(Guid book);
+        Book DeleteBook(Book book);
     }
 }

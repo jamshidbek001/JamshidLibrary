@@ -5,7 +5,7 @@
 
 namespace JamshidLibrary.App.Brokers.Storages
 {
-    public partial class StorageBroker
+    public partial class StorageBroker : IStorageBroker
     {
     }
 }
