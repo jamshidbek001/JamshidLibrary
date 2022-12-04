@@ -41,7 +41,7 @@ namespace JamshidLibrary.App.Tests.Unit.Services.Foundations.Books
                 broker.SelectBookById(inputBookId),
                     Times.Once);
 
-            this.storageBrokerMock.Verify(broker => 
+            this.storageBrokerMock.Verify(broker =>
                 broker.DeleteBook(inputBook), Times.Once);
 
             this.storageBrokerMock.VerifyNoOtherCalls();

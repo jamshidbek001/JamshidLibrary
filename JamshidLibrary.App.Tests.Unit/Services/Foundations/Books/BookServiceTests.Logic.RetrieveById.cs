@@ -23,7 +23,7 @@ namespace JamshidLibrary.App.Tests.Unit.Services.Foundations.Books
             Book expectedBook = storageBook;
 
             this.storageBrokerMock.Setup(broker =>
-                broker.SelectBookById(inputBookId)) 
+                broker.SelectBookById(inputBookId))
                     .Returns(storageBook);
 
             // when
@@ -37,7 +37,7 @@ namespace JamshidLibrary.App.Tests.Unit.Services.Foundations.Books
                 broker.SelectBookById(inputBookId),
                     Times.Once);
 
-            this.storageBrokerMock.VerifyNoOtherCalls();       
+            this.storageBrokerMock.VerifyNoOtherCalls();
         }
     }
 }
