@@ -18,7 +18,13 @@ namespace JamshidLibrary.App.Services.Foundations.Books
         public Book AddBook(Book book) =>
             this.storageBroker.InsertBook(book);
 
+
         public Book RetrieveBookById(Guid id) => 
             this.storageBroker.SelectBookById(id);
+
+        public Book RemoveBookById(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
