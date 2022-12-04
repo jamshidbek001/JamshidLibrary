@@ -10,5 +10,6 @@ namespace JamshidLibrary.App.Services.Foundations.Books
     public interface IBookService
     {
         Book AddBook(Book book);
+        Book RetrieveBookById(Guid id);
     }
 }
