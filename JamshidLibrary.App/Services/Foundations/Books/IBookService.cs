@@ -11,6 +11,7 @@ namespace JamshidLibrary.App.Services.Foundations.Books
     {
         Book AddBook(Book book);
         Book RetrieveBookById(Guid id);
+        Book ModifyBook(Book book);
         Book RemoveBookById(Guid id);
     }
 }
